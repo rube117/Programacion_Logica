@@ -1,0 +1,12 @@
+% Programa de Frutas
+% *** Vamos a ver el manejo de variables ***
+% Autor: Rubén Verduzco López
+
+limpiar :- write('\033[2J').
+
+es_fruta(uva).
+es_fruta(sandia).
+es_fruta(melon).
+es_fruta(melocoton).
+es_fruta(membrillo).
+
