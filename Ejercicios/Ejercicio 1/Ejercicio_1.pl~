@@ -1,0 +1,29 @@
+% Ejercicio 1.
+% Arból genealógico familiar.
+% Autor: Rubén Verduzco López.
+
+limpiar :- write('\033[2J'). % Limpia la pantalla.
+
+es_hombre(rogelio).
+es_hombre(nacho).
+es_hombre(humberto).
+es_hombre(abraham).
+es_hombre(isaias).
+es_hombre(luis).
+
+es_mujer(sandra).
+es_mujer(maria).
+es_mujer(yessica).
+
+es_padre(rogelio,nacho).
+es_padre(rogelio,humberto).
+es_padre(rogelio,abraham).
+
+es_padre(abraham,isaias).
+
+es_padre(humberto,luis).
+es_padre(humberto,maria).
+es_padre(humberto,yessica).
+
+es_madre(sandra,isaias).
+
