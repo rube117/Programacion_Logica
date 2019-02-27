@@ -1,4 +1,4 @@
 # Programacion_Logica
-Son las prácticas de Programación Lógica
+Son las Prácticas y Ejercicios de Programación Lógica
 Abrir con .pl~
 # Donaciones: https://paypal.me/rube38197?locale.x=es_XC
