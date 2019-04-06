@@ -1,0 +1,137 @@
+¿Hay niñas con ojos color verde?
+ninia(_,_,verde).
+true
+
+¿Hay niñas capturadas?
+ninia(_,_,_).
+true
+
+Si la respuesta de la pregunta 1 fuera verdadera, ¿cuáles son los nombres?
+ninia(Nombres,_,verde).
+Nombres = araceli.
+
+¿Quiénes son los niños de Niños de 12 años?
+ninio(Nombres,12,_).
+Nombres = arturo.
+
+¿Quiénes son los Niños que juegan con pelota?
+juguete(Nombre,pelota).
+Nombre = araceli ;
+Nombre = marisela ;
+Nombre = carolina ;
+Nombre = roberto ;
+Nombre = arturo.
+
+¿Hay niños capturados?
+ninio(_,_,_).
+true
+
+¿Qué niña juega ajedrez?
+ninia(Nombre,_,_),juguete(Nombre,ajedrez).
+Nombre = elia ;
+false.
+
+¿Qué niño/niña tiene unos patines?
+juguete(Quienes,patines).
+false.
+
+¿Quiénes son los Niños entre 6 y 11 años?
+ninio(Nombre,6,_);ninio(Nombre,7,_);ninio(Nombre,8,_);ninio(Nombre,9,_);ninio(Nombre,10,_);ninio(Nombre,11,_).
+Nombre = osvaldo ;
+Nombre = federico ;
+Nombre = israel ;
+Nombre = roberto ;
+Nombre = paco ;
+Nombre = sergio.
+
+Niños (hombres) que tienen juguetes, NO nos interesa cuál
+ninio(_,_,_),juguete(_,_).
+true .
+
+Niños (hombres) que tienen juguetes, nos interesa cuál
+ninio(Nombre,_,_),juguete(Nombre,_).
+Nombre = roberto ;
+Nombre = roberto ;
+Nombre = roberto ;
+Nombre = osvaldo ;
+Nombre = federico ;
+Nombre = federico ;
+Nombre = federico ;
+Nombre = paco ;
+Nombre = arturo ;
+Nombre = arturo ;
+Nombre = sergio ;
+Nombre = israel ;
+Nombre = israel.
+
+¿Quiénes son las niñas que juegan con yoyo?.
+ninia(Nombre,_,_),juguete(Nombre,yoyo).
+Nombre = beatriz ;
+false.
+
+¿Hay niños capturados de 8 años de edad?
+ninio(_,8,_).
+true .
+
+¿Quiénes son los Niños/niñas(en general) que juegan con pelota y con bici.
+juguete(Nombre,pelota),juguete(Nombre,bici).
+Nombre = carolina ;
+Nombre = roberto ;
+false.
+
+% Mejor ejemplo
+Niños (hombres) que pueden jugar, sólo si tienen el mismo juguete y el mismo horario de juego
+
+
+Niños/Niñas (en general) que juegan en la calle, sólo si NO están castigados
+horario(Quienes,_,_,_,si,no).
+Quienes = veronica ;
+Quienes = elia ;
+Quienes = beatriz.
+
+% Mejor ejemplo
+Niñas que juegan con niños (hombres), sólo si NO tienen el mismo juguete
+
+
+Mostrar todos los niños, en general, que están castigados
+horario(Quienes,_,_,_,_,si).
+Quienes = marisela ;
+Quienes = lupe ;
+Quienes = osvaldo ;
+Quienes = federico ;
+Quienes = sergio ;
+Quienes = israel.
+
+% Mejor ejemplo
+Mostrar niños (hombres) que pueden jugar con niñas o niños, sólo si a ambos los dejan jugar en casa y tienen juguetes diferentes
+
+
+¿Qué niños tienen un balero?
+ninio(Nombre,_,_),juguete(Nombre,balero).
+false.
+
+% Mejor ejemplo
+Mostrar las niñas que pueden jugar en la calle entre las 17 y 20 horas, si no están castigadas.
+
+
+¿Qué juguetes tiene Federico?
+juguete(federico,Juguetes).
+Juguetes = yoyo ;
+Juguetes = libro ;
+Juguetes = consola_de_videojuegos.
+
+¿Quiénes (niño/niña) juegan con una pelota o ajedrez?
+juguete(Quienes,pelota);juguete(Quienes,ajedrez).
+Quienes = araceli ;
+Quienes = marisela ;
+Quienes = carolina ;
+Quienes = roberto ;
+Quienes = arturo ;
+Quienes = elia.
+
+¿Qué niños tienen los ojos negros y tienen 10 años de edad y juegan con bici?
+ninio(Quienes,10,negro),juguete(Quienes,bici).
+Quienes = roberto ;
+Quienes = paco.
+
+ninio(Nombre,_,_),juguete(Nombre,Juguete),ninio(Nombre2,_,_),juguete(Nombre2,Juguete2),horario(Nombre,_,_,si,_,_),horario(Nombre2,_,_,si,_,_),ninia(Nombre3,_),juguete(Nombre3,Juguete3),horario(Nombre3,_,_,si,_,_),Nombre\=Nombre2,Juguete2\=Juguete3,Juguete\=Juguete2.

@@ -1,0 +1,73 @@
+% *******************************************************************************
+% Práctica 1.
+% Hechos y consultas.
+% Autor: Rubén Verduzco López.
+
+limpiar :- write('\033[2J'). % Limpia la pantalla.
+
+% Hecho
+% ninia/3, --> niña(Nombre, Edad,ColorOjos).
+ninia(araceli,10,verde).
+ninia(veronica,8,cafe).
+ninia(elia,6,cafe).
+ninia(marisela,12,cafe).
+ninia(carolina,10,negro).
+ninia(beatriz,7,negro).
+
+% Hecho
+% ninio/3 --> niño(Nombre, Edad,ColorOjos).
+ninio(roberto,10,negro).
+ninio(osvaldo,6,negro).
+ninio(federico,8,negro).
+ninio(paco,10,negro).
+ninio(arturo,12,azul).
+ninio(sergio,11,azul).
+ninio(israel,8,verde).
+
+% Hecho
+% horario/6 --> horario (Nombre, HoraInic, HoraFin, Juegacasa,Juegacalle, Castigado).
+horario(araceli,16,18,no,no,no).
+horario(veronica,17,18,no,si,no).
+horario(elia,19,20,si,si,no).
+horario(marisela,17,21,si,no,si).
+horario(beatriz,17,20,si,si,no).
+horario(lupe,18,21,si,no,si).
+horario(roberto,15,18,si,no,no).
+horario(osvaldo,16,18,no,si,si).
+horario(federico,15,16,si,no,si).
+horario(paco,15,21,si,no,no).
+horario(arturo,16,19,si,no,no).
+horario(sergio,17,21,si,si,si).
+horario(israel,18,20,si,si,si).
+
+% Hecho
+% Ninias
+% juguete/2 --> juguete (Nombre,TipoJueguete).
+juguete(araceli,pelota).
+juguete(araceli,libro).
+juguete(veronica,bici).
+juguete(elia,ajedrez).
+juguete(marisela,pelota).
+juguete(carolina,pelota).
+juguete(carolina,bici).
+juguete(beatriz,yoyo).
+juguete(beatriz,libro).
+
+% Hecho
+% Ninios
+% juguete/2 --> juguete (Nombre,TipoJueguete).
+juguete(roberto,pelota).
+juguete(roberto,consola_de_videojuegos).
+juguete(roberto,bici).
+juguete(osvaldo,yoyo).
+juguete(federico,yoyo).
+juguete(federico,libro).
+juguete(federico,consola_de_videojuegos).
+juguete(paco,bici).
+juguete(arturo,pelota).
+juguete(arturo,yoyo).
+juguete(sergio,libro).
+juguete(israel,bici).
+juguete(israel,consola_de_videojuegos).
+
+% *******************************************************************************
